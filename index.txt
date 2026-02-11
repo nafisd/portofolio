@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nafis Difaudin — Front End Developer</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link href="./dist/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-beige-main text-beige-dark font-sans">
+
+    <!-- HERO -->
+ <section class="relative min-h-screen bg-beige-main overflow-hidden">
+
+  <div class="grid md:grid-cols-2 min-h-screen">
+
+    <!-- LEFT CONTENT -->
+    <div class="flex flex-col justify-center px-16 z-10">
+
+      <p class="uppercase tracking-[4px] text-beige-accent text-sm mb-6">
+        Front-End Developer
+      </p>
+
+      <h1 class="text-[120px] font-serif leading-none mb-6">
+        Hello
+      </h1>
+
+      <p class="text-beige-soft text-lg max-w-md mb-10">
+        — It’s Nafis, a front-end developer crafting elegant,
+        interactive and meaningful digital experiences.
+      </p>
+
+      <div class="flex gap-5">
+        <a href="#projects"
+           class="px-7 py-3 rounded-full bg-beige-accent text-white hover:opacity-80 transition">
+          View Projects
+        </a>
+
+        <a href="#"
+           class="px-7 py-3 rounded-full border border-beige-dark hover:bg-beige-dark hover:text-white transition">
+          Download CV
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="relative">
+
+      <img src="images/poto3.png"
+           alt="Nafis"
+           class="absolute right-0 top-0 h-full w-auto object-cover grayscale-[15%]">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- SKILLS -->
+    <section class="py-24 px-10 bg-beige-card">
+
+        <h2 class="text-4xl font-serif mb-16 text-center">Skills & Expertise</h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+
+            <div>
+                <img src="images/html.svg" class="h-14 mx-auto mb-4">
+                <p>HTML</p>
+            </div>
+
+            <div>
+                <img src="images/css.svg" class="h-14 mx-auto mb-4">
+                <p>CSS</p>
+            </div>
+
+            <div>
+                <img src="images/js.svg" class="h-14 mx-auto mb-4">
+                <p>JavaScript</p>
+            </div>
+
+            <div>
+                <img src="images/react.svg" class="h-14 mx-auto mb-4">
+                <p>React</p>
+            </div>
+
+            <div>
+                <img src="images/tailwind.svg" class="h-14 mx-auto mb-4">
+                <p>Tailwind</p>
+            </div>
+
+            <div>
+                <img src="images/laravel.svg" class="h-14 mx-auto mb-4">
+                <p>Laravel</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 px-10">
+
+        <h2 class="text-4xl font-serif mb-16 text-center">Selected Projects</h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <div class="bg-beige-card p-8 rounded-3xl hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Cafe Website</h3>
+                <p class="text-beige-soft text-sm">
+                    Modern responsive cafe landing page with elegant UI.
+                </p>
+            </div>
+
+            <div class="bg-beige-card p-8 rounded-3xl hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">POS System</h3>
+                <p class="text-beige-soft text-sm">
+                    Web-based cashier system with scanner integration.
+                </p>
+            </div>
+
+            <div class="bg-beige-card p-8 rounded-3xl hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">SIBI Recognition</h3>
+                <p class="text-beige-soft text-sm">
+                    Sign language recognition using Machine Learning.
+                </p>
+            </div>
+
+            <div class="bg-beige-card p-8 rounded-3xl hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Translator Web</h3>
+                <p class="text-beige-soft text-sm">
+                    Interactive language translator interface.
+                </p>
+            </div>
+
+            <div class="bg-beige-card p-8 rounded-3xl hover:scale-105 transition duration-300">
+                <h3 class="text-xl font-semibold mb-3">Tajwidku App</h3>
+                <p class="text-beige-soft text-sm">
+                    Mobile app for learning tajwid interactively.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="py-12 text-center text-beige-soft text-sm">
+        © 2026 Nafis Difaudin — Crafted with precision.
+    </footer>
+
+</body>
+
+</html>

@@ -68,11 +68,28 @@ body {
 
 /* HERO */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 8%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 8%;
+    gap: 60px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #cbd5e1;
 }
 
 .hero h1 {
@@ -90,6 +107,17 @@ body {
     margin-top: 10px;
 }
 
+.highlight {
+    color: #38bdf8;
+}
+
+.hero-desc {
+    max-width: 600px;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
 .btn {
     margin-top: 25px;
     padding: 12px 28px;
@@ -104,6 +132,91 @@ body {
 .btn:hover {
     transform: translateY(-4px);
 }
+
+/* EDITORIAL HERO STYLE */
+/* ============================= */
+
+.hero-editorial {
+    display: flex;
+    min-height: 100vh;
+    padding: 120px 10%;
+    background: var(--bg-main);
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--text-soft);
+    position: absolute;
+    left: -40px;
+    top: 0;
+}
+
+.hero-content {
+    align-self: center;
+}
+
+.stats {
+    font-size: 14px;
+    color: var(--text-soft);
+    margin-bottom: 20px;
+}
+
+.hero-big {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 16px;
+    color: var(--text-soft);
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-right img {
+    height: 90vh;
+    object-fit: cover;
+    filter: grayscale(30%);
+}
+
+/* Responsive */
+
+@media(max-width: 900px) {
+    .hero-editorial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-right img {
+        height: 60vh;
+        margin-top: 40px;
+    }
+
+    .vertical-text {
+        display: none;
+    }
+
+    .hero-big {
+        font-size: 72px;
+    }
+}
+
 
 /* SECTION */
 .section {
